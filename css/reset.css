@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    height:100%;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li > a {
+    color: white;
+  }
+  ul > li:hover > a {
+    font-weight: bold;
+    color: red;
+  }
+  .list-unstyled {
+    margin-top: 20px;
+  }
+
+  input[type="email"] {
+    width: 180px;
+    height: 30px;
+    padding-right: 50px;
+}
+
+input[type="submit"] {
+    margin-left: -50px;
+    height: 29px;
+    width: 50px;
+}
+
+table > tbody > tr >th {
+  width: 50%;
+}
+table > tbody > tr >td {
+  text-align: left;
+  padding: 10px;
+  color: #afafaf;
+  padding-left: 52px;
+}
