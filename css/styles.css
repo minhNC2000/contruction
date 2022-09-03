@@ -12,29 +12,43 @@
   padding: 10px;
 }
 
+#navbar-section {
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+}
 #navbar-section .container {
   align-items: center;
+}
+#navbar-section .navbar-logo {
+  display: inline-block;
 }
 #navbar-section .navbar-logo img {
   width: 100px;
 }
 #navbar-section .navbar-navigation {
   font-size: 20px;
-}
-#navbar-section .navbar-navigation a {
-  padding: 0 5px;
-  margin: 20px;
-  font-size: 18px;
-}
-#navbar-section .navbar-navigation a:hover {
   color: black;
-  text-shadow: 1px 1px 2px black;
-  border-bottom: 2px solid goldenrod;
 }
-#navbar-section .navbar-navigation i:hover {
+#navbar-section .navbar-navigation ul > li {
+  display: inline-block;
+  margin: 15px 15px 0 15px;
+}
+#navbar-section .navbar-navigation ul > a > i {
+  font-size: 25px;
+}
+#navbar-section .navbar-navigation ul > a:hover > i {
+  font-size: 27px;
   color: red;
 }
-#navbar-section .navbar-navigation .respon-icon i {
+#navbar-section .navbar-navigation i {
+  margin-left: 25px;
+}
+#navbar-section .mobile-menu-btn {
   display: none;
 }
 #navbar-section .call {
@@ -55,7 +69,7 @@
 
 #title-section {
   width: 100%;
-  background: url("../img/title-img.png") no-repeat center;
+  background: url("/img/title-img.png") no-repeat center;
   background-size: cover;
 }
 #title-section .title-head {
@@ -79,12 +93,11 @@
   width: 100%;
 }
 #intro-section .intro-father {
-  z-index: 99999;
   width: 400px;
   border-top: 4px solid #fcb222;
   background-color: white;
   right: 0;
-  transform: translate(-90px, -160px);
+  margin: -90px 70px;
   box-shadow: 2px 5px 10px 0px #817b7b;
 }
 #intro-section .intro-father .father-content {
@@ -111,5 +124,17 @@
   font-size: 16px;
   color: white;
   margin-top: 120px;
-  background: url("../img/footer-img.png") center center;
+  background: url("/img/footer-img.png") center center;
+}
+#footer-section ul > li > a {
+  color: white;
+}
+#footer-section button {
+  padding: 15px 60px;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+}
+#footer-section button:hover {
+  background-color: transparent;
 }/*# sourceMappingURL=styles.css.map */

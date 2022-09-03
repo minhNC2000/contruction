@@ -1,1 +1,23 @@
-/*# sourceMappingURL=responsive.css.map */
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  #navbar-section {
+    overflow: hidden;
+  }
+  #navbar-section .navbar-navigation ul > li {
+    display: inline-block;
+  }
+  #navbar-section .navbar-navigation ul > a {
+    display: none;
+  }
+  #navbar-section .call {
+    display: none;
+  }
+  #navbar-section #mobile-menu {
+    color: red;
+    font-size: 20px;
+  }
+  #navbar-section .mobile-menu-btn {
+    display: block;
+    top: 0;
+    left: 0;
+  }
+}/*# sourceMappingURL=responsive.css.map */

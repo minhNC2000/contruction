@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  #navbar-section {
+    overflow: hidden;
+    .navbar-navigation {
+      ul > li {
+        display: inline-block;
+      }
+      ul > a {
+        display: none;
+      }
+    }
+    .call {
+      display: none;
+    }
+    #mobile-menu {
+      color: red;
+      font-size: 20px;
+    }
+    .mobile-menu-btn {
+      display: block;
+      top: 0;
+    left: 0;
+    }
+  }
+}
