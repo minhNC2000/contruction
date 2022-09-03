@@ -1,4 +1,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  #header-section {
+    display: none;
+  }
   #navbar-section {
     overflow: hidden;
   }
@@ -19,5 +22,8 @@
     display: block;
     top: 0;
     left: 0;
+  }
+  #intro-section .intro-content {
+    margin-top: 140px;
   }
 }/*# sourceMappingURL=responsive.css.map */
