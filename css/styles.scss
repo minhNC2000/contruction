@@ -1,9 +1,27 @@
+/* Gradient Scrollbar */
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(7, 0, 211, 1) 100%
+  );
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: transparent; /* opacity: 0; should do the thing either */
+  box-shadow: 0px 0px 0px 100000vh black;
+  border-radius: 20px;
+}
 #header-section {
   background-color: rgb(59, 57, 56);
-  padding: 10px;
-
+  padding: 10px 0;
   .social-ico {
-    padding: 10px;
+    padding: 10px 0;
     a {
       margin: 5px;
     }
@@ -14,14 +32,7 @@
 }
 #navbar-section {
   background-color: white;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999999;
-  .container {
-    align-items: center;
-  }
+
   .navbar-logo {
     display: inline-block;
     img {
@@ -29,40 +40,43 @@
     }
   }
   .navbar-navigation {
-    font-size: 20px;
     color: black;
     ul > li {
       display: inline-block;
       margin: 15px 15px 0 15px;
     }
+    ul > a {
+      padding: 15px;
+    }
     ul > a > i {
       font-size: 25px;
     }
     ul > a:hover > i {
-      font-size: 27px;
+      
       color: red;
     }
-    i {
-      margin-left: 25px;
+  }
+
+  .call {
+    .call-body {
+      background-color: #fcb222;
+      color: white;
+      padding: 0 20px;
+      .call-icon {
+        padding: 25px;
+        font-size: 25px;
+        justify-content: center;
+      }
+      .call-content p {
+        font-size: 10px;
+        padding: 5px;
+        margin-left: 10px;
+      }
     }
   }
+
   .mobile-menu-btn {
     display: none;
-  }
-  .call {
-    width: 250px;
-    background-color: #fcb222;
-    color: white;
-    .call-icon {
-      padding: 25px;
-      font-size: 25px;
-      justify-content: center;
-    }
-    .call-content p {
-      font-size: 10px;
-      padding: 5px;
-      margin-left: 10px;
-    }
   }
 }
 

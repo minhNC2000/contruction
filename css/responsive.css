@@ -2,26 +2,24 @@
   #header-section {
     display: none;
   }
-  #navbar-section {
-    overflow: hidden;
+  #navbar-section .navbar-wrapper .navbar-logo {
+    padding: 20px;
   }
-  #navbar-section .navbar-navigation ul > li {
-    display: inline-block;
+  #navbar-section .navbar-wrapper .navbar-navigation {
+    position: absolute;
   }
-  #navbar-section .navbar-navigation ul > a {
-    display: none;
-  }
-  #navbar-section .call {
-    display: none;
-  }
-  #navbar-section #mobile-menu {
-    color: red;
-    font-size: 20px;
-  }
-  #navbar-section .mobile-menu-btn {
+  #navbar-section .navbar-wrapper .navbar-navigation ul > li {
     display: block;
-    top: 0;
-    left: 0;
+  }
+  #navbar-section .navbar-wrapper .navbar-navigation ul > a {
+    display: none;
+  }
+  #navbar-section .navbar-wrapper #mobile-menu {
+    display: block;
+    padding: 27.5px;
+    color: red;
+    font-size: 30px;
+    position: relative;
   }
   #intro-section .intro-content {
     margin-top: 140px;
