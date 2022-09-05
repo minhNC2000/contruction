@@ -111,6 +111,7 @@ body::-webkit-scrollbar-thumb {
 }
 #intro-section .intro-content {
   font-size: 25px;
+  margin-top: 150px;
 }
 #intro-section .intro-content .intro-content-title {
   margin-top: 35px;
